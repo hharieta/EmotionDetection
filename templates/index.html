@@ -1,32 +1,26 @@
+<!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="./static/mywebscript.js"></script>
-    <style>
-        .center-heading {
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <div class="card">
-        <div class="card-body">
-            <h1 class="center-heading">NLP - Emotion Detection</h1> 
-            <div style="padding: 25px 25px 25px 25px;">
-            <h2 class="mb-3">
-                <label class="form-label">Please enter the text to be analyzed</label>
-                <input type="textarea" class="form-control" id="textToAnalyze">
-            </h2>
-
-            <div style="padding: 25px 25px 25px 25px;">
-                <button onclick="RunSentimentAnalysis()" class="btn btn-secondary">Run Sentiment Analysis</button>
-            </div>
+    <head>
+        <script src="static/mywebscript.js"></script>
+        <link rel="stylesheet" href="/static/css/styles.css"/>
+        <title>Emotion Detection</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="center-heading" style="padding-bottom: 2rem;">NLP - Emotion Detection</h1> 
+            <form>
+              <input placeholder="Text to analyze" type="textarea" required="" id="textToAnalyze">
+                <br>
+              <button type="button" onclick="RunSentimentAnalysis()">Run Emotion Analysis</button>
+            </form>
             <div style="padding: 25px 25px 25px 25px;"></div>
             <h2 class="mb-3">
                 <label class="form-label">Result of Emotion Detection</label>
             </h2>
 
-            <div id="system_response" style="padding: 25px 25px 25px 25px;"></div>
+            <div  class="box" id="system_response" style="font-size: 18px; font-weight: 400;"></div>
+            
+            <p class="maxEmotion" id="maxEmotion">Max Emotion</p>
         </div>
-    </div>
-</body>
+    </body>
+</html>

@@ -29,15 +29,15 @@ def emotion_detector(text: str) -> Dict:
             return_analyzed_text=True
         )
     except Exception:
-        return {"dominant_emotion": None}
+        return None
 
     formatted_response = response.get_result()
         
     if response.status_code == 200:
         emotions = formatted_response['emotion']['document']['emotion']
-        emotions.update({"dominant_emotion": max(
-            formatted_response['emotion']['document']['emotion'].items(), 
-            key=operator.itemgetter(1))[0]})
+        # emotions.update({"dominant_emotion": max(
+        #     formatted_response['emotion']['document']['emotion'].items(), 
+        #     key=operator.itemgetter(1))[0]})
     elif response.status_code == 400:
         emotions = {
             "anger": None, 

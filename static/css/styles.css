@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: url("/static/images/backgound.jpg") center center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center; }
+
+  .container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: #f8f4e5;
+    padding: 50px 100px;
+    border: 2px solid black;
+    box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px black;
+ }
+
+.contact-us {
+  background: #f8f4e5;
+  padding: 50px 100px;
+  border: 2px solid black;
+  box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px black; }
+
+input {
+  display: block;
+  width: 100%;
+  height: max-content;
+  font-size: 14pt;
+  line-height: 28pt;
+  font-family: "Fjalla One";
+  margin-bottom: 28pt;
+  border: none;
+  border-bottom: 5px solid black;
+  background: #f8f4e5;
+  min-width: 250px;
+  padding-left: 5px;
+  outline: none;
+  color: black; 
+}
+.box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.boxarea {
+    display: flex;
+    padding: 4rem;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    border-color: #2A293E;
+    border: 2px solid #333;
+}
+
+input:focus {
+  border-bottom: 5px solid #ffa580; }
+
+button {
+  display: block;
+  margin: 0 auto;
+  line-height: 28pt;
+  padding: 0 20px;
+  background: #ffa580;
+  letter-spacing: 2px;
+  transition: .2s all ease-in-out;
+  outline: none;
+  border: 1px solid black;
+  box-shadow: 3px 3px 1px 1px #95a4ff, 3px 3px 1px 2px black; }
+  button:hover {
+    background: black;
+    color: white;
+    border: 1px solid black; }
+
+::selection {
+  background: #ffc8ff; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  border-bottom: 5px solid #95a4ff;
+  -webkit-text-fill-color: #2A293E;
+  -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+  transition: background-color 5000s ease-in-out 0s; }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 4px double #95a4ff;
+}
+
+th, td {
+    padding: 5px; /* Adjust the padding as needed */
+    text-align: left;
+}
+
+.maxEmotion {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin: 1rem 0 0 auto;
+    line-height: 28pt;
+    padding: 0 20px;
+    background: #ffa580;
+    letter-spacing: 2px;
+    transition: .2s all ease-in-out;
+    outline: none;
+    border: 1px solid black;
+}
